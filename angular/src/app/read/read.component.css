@@ -1,0 +1,37 @@
+.main {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 0 0 0 10px;
+  flex-wrap: wrap;
+}
+
+.input-label {
+  font-weight: bold;
+  width: 200px;
+}
+
+.input-box {
+  width: 260px
+}
+
+.files {
+  padding: 25px;
+}
+
+.file {
+  border: 1px dotted #222222;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.heading {
+  text-align: center;
+  font-size: 20px;
+}
+
+.process {
+  margin-top : 20px;
+}

@@ -1,0 +1,56 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: 'Product Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+}
+
+
+body {
+  width: 100%;
+  padding: 0%;
+  margin: 0%;
+  font-family: Product Sans;
+  font-weight: 500;
+  color: var(--font-color);
+  font-size: 14px;
+  letter-spacing: 0.7px;
+}
+
+div {
+  padding: 0;
+}
+
+.btn {
+  padding: 8px 14px 8px 14px;
+  font-size: 16px;
+  font-weight: bold;
+  background: #fff;
+  color: #222222;
+  cursor: pointer;
+  border: 1px solid #222222;
+  transition: all 0.6s;
+  border-radius: 8px;
+  outline: none;
+  font-family: Product Sans;
+}
+
+.btn:hover, .active-link {
+  background: #222222;
+  color: #fff;
+}
+
+input {
+  display: block;
+  border: none;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #222222;
+  padding: 11px 10px;
+  outline: none;
+  border-radius: 5px;
+  transition: 0.35s;
+  font-size: 16px;
+  width: 260px;
+}

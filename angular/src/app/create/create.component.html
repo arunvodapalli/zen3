@@ -1,0 +1,36 @@
+<div class='main'>
+  <div class="input-label">
+    <span> Enter Process Name </span>
+  </div>
+  <div class="input-box">
+    <input type="text" placeholder="Enter your process name" name="name" [(ngModel)]='process'>
+  </div>
+</div>
+<div class='main'>
+  <div class="input-label">
+    <span> Enter Key Name </span>
+  </div>
+  <div class="input-box">
+    <input type="text" placeholder="Enter key name" [(ngModel)]='key' name="key">
+  </div>
+</div>
+<div class='main'>
+  <div class="input-label">
+    <span> Enter Key Value </span>
+  </div>
+  <div class="input-box">
+    <input type="text" placeholder="Enter value" [(ngModel)]='value' name="value">
+  </div>
+</div>
+<div class='main'>
+  <button class="btn" (click)='storeProcess()'>Add Process</button>
+</div>
+<div class="files" *ngIf='files.length'>
+  <p class="heading">Files</p>
+  <div class="file" *ngFor='let f of files;let i = index'>
+    <span> {{f}} </span>
+  </div>
+</div>
+<div class="files" *ngIf='!files.length'>
+  <p class="heading">No files found</p>
+</div>
