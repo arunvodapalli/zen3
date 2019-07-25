@@ -3,6 +3,7 @@ var router = express.Router();
 var fs = require('fs');
 var Path = require('path');
 const path = './files/';
+fs.mkdir('files', (e,r) => {});
 
 router.get('/create-env/:process/:key/:value', (req, res) => {
     const data = req.params;
